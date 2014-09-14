@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>インディックスを利用したデータの取得、更新、及び削除 /009/sample08</title>
+</head>
+<body>
+	<h1>インディックスを利用したデータの取得、更新、及び削除</h1>
+	<div>
+		<input type="button" id="button_createdb" value="DB作成・接続" />
+		<input type="button" id="button_dropdb" value="DB削除" />
+	</div>
+	<div>
+		<label for="use_index">使用インディックス</label>
+		<select id="use_index">
+			<option value=""></option>
+			<option value="findBySex">findBySex</option>
+			<option value="findByEmail">findByEmail</option>
+			<option value="findByAge">findByAge</option>
+			<option value="findByBirthday">findByBirthday</option>
+			<option value="findByInterestSingle">findByInterestSingle</option>
+			<option value="findByInterestMulti">findByInterestMulti</option>
+		</select>
+	</div>
+	<div>
+		<input type="button" id="button_select_list" value="一覧取得" />
+		<input type="button" id="button_update" value="更新テスト" />
+		<input type="button" id="button_delete" value="削除テスト" />
+	</div>
+	<div>
+		<label for="range_only">指定</label>
+		<input type="text" id="range_only" value="" />
+		<label for="range_lower">最小</label>
+		<input type="text" id="range_lower" value="" />
+		<input type="checkbox" id="range_lower_open" value="true" checked="cehcked" />
+		<label for="range_upper">最大</label>
+		<input type="text" id="range_upper" value="" />
+		<input type="checkbox" id="range_upper_open" value="true" checked="cehcked" />
+		<label for="direction">向き</label>
+		<select id="direction">
+			<option value=""></option>
+			<option value="next">next</option>
+			<option value="nextunique">nextunique</option>
+			<option value="prev">prev</option>
+			<option value="prevunique">prevunique</option>
+		</select><br>
+		<span>※使用インディックスが findByInterestSingle の場合は、コンマ区切りで入力。→内部でArrayに変換</span>
+	</div>
+	<div>
+		<input type="button" id="button_select_single" value="1件取得" />
+		<label for="index_key">インディックスキー</label>
+		<input type="text" id="index_key" value="" />
+	</div>
+	<div id="result_list"></div>
+	<div id="result_count"></div>
+	<script src="common.js"></script>
+	<script src="sample08.js"></script>
+</body>
+</html>

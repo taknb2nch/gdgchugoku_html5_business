@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Web Storage へのアクセス方法 /008/sample02</title>
+</head>
+<body>
+	<div>
+		<label>key / value</label>
+		<input type="text" name="field_key" id="field_key" value="storage_key" />
+		<input type="text" name="field_value" id="field_value" />
+	</div>
+
+	<div>
+		<h3>setItem, getItem</h3>
+		<input type="button" id="button_regist1" value="登録" />
+		<input type="button" id="button_read1" value="読み込み" />
+	</div>
+
+	<div>
+		<h3>配列</h3>
+		<input type="button" id="button_regist2" value="登録" />
+		<input type="button" id="button_read2" value="読み込み" />
+	</div>
+
+	<div>
+		<h3>属性</h3>
+		<input type="button" id="button_regist3" value="登録" />
+		<input type="button" id="button_read3" value="読み込み" />
+		<input type="button" id="button_read3_2" value="存在しないキーで読み込み" />
+	</div>
+
+	<script src="sample02.js"></script>
+</body>
+</html>

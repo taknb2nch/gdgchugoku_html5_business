@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="sample03.css">
+	<title>Web Storage イベント /008/sample03</title>
+</head>
+<body>
+	<div>
+		<label>key / value</label>
+		<input type="text" name="field_key" id="field_key" />
+		<input type="text" name="field_value" id="field_value" />
+		<input type="button" id="button_update" value="更新" />
+		<input type="button" id="button_read" value="取得" />
+		<input type="button" id="button_delete" value="削除" />
+	</div>
+
+	<div>
+		<h3>storage内容の取得</h3>
+		<input type="button" id="button_list" value="読み込み" />
+		<div id="content">
+		</div>
+	</div>
+
+	<div>
+		<h3>storageのクリア</h3>
+		<input type="button" id="button_clear" value="クリア" />
+	</div>
+
+	<span>Chromeでは自身のタブの変更ではイベントは発生しません。</span>
+
+	<div id="message" class="message">
+	</div>
+
+	<script src="sample03.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+CACHE MANIFEST
+#version 2
+
+CACHE:
+images/gdgchugoku.gif
+js/jquery-1.10.2.min.js
+sample00.css
+sample00.js
+
+FALLBACK:
+online/ offline.html
+
+NETWORK:
+https://api.twitter.com/

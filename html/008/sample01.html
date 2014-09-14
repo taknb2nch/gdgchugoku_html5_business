@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Web Storage 基本的な使い方 /008/sample01</title>
+</head>
+<body>
+	<div>
+		<label>Storage</label>
+		<select id="storage_type">
+			<option value="local" selected>localStorage</option>
+			<option value="session">sessionStorage</option>
+		</select>
+	</div>
+	<div>
+		<h3>値の登録</h3>
+		<label>key / value</label>
+		<input type="text" name="field_key1" id="field_key1" />
+		<input type="text" name="field_value1" id="field_value1" />
+		<input type="button" id="button_regist" value="登録" />
+	</div>
+
+	<div>
+		<h3>値の取得と更新</h3>
+		<label>key / value</label>
+		<input type="text" name="field_key2" id="field_key2" />
+		<input type="text" name="field_value2" id="field_value2" />
+		<input type="button" id="button_read" value="取得" />
+		<input type="button" id="button_update" value="更新" />
+	</div>
+
+	<div>
+		<h3>キーの削除</h3>
+		<label>key / value</label>
+		<input type="text" name="field_key3" id="field_key3" />
+		<input type="button" id="button_delete" value="削除" />
+	</div>
+
+	<div>
+		<h3>storage内容の取得</h3>
+		<input type="button" id="button_list" value="読み込み" />
+		<div id="content">
+		</div>
+	</div>
+
+	<div>
+		<h3>storageのクリア</h3>
+		<input type="button" id="button_clear" value="クリア" />
+	</div>
+
+	<script src="sample01.js"></script>
+</body>
+</html>

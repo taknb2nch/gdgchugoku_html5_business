@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+#droparea {
+	width: 300px;
+	height: 150px;
+	background-color: #eeeeee;
+	border: dotted 1px #888888;
+	text-align: center;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+.thumbnail {
+	width: 200px;
+	margin: 5px;
+}

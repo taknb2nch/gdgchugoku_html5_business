@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<title>カスタムデータ属性サンプル /003/sample01</title>
+</head>
+<body>
+	<section>
+		<h1>カスタムデータ属性サンプル</h1>
+		<article>
+			<h2>独自属性の定義</h2>
+			<ul>
+				<li>data- で始まり少なくとも1文字が続く属性を独自に定義できる</li>
+				<li>大文字は使用しない</li>
+				<li>ハイフンは使用できる</li>
+			</ul>
+			<figure id="sample">
+				<ul>
+					<li data-year="1996" data-color="white" data-engine="VR6">Cabrio</li>
+					<li data-year="1993" data-color="purple" data-engine="VR6">Corrado</li>
+					<li data-year="2008" data-color="red" data-engine="2.0T">Eos</li>
+					<li data-year="2003" data-color="blue" data-engine="W8">Passat</li>
+				</ul>
+				<figcaption>カスタムデータ属性サンプル</figcaption>
+			</figure>
+		</article>
+		<article>
+			<h2>JavaScriptでカスタム属性にアクセスする</h2>
+			<h3>カスタムデータ属性の取得</h3>
+			<ul>
+				<li>エレメント.dataset.data-以降の名称 で取得できる</li>
+				<li>対応していないブラウザ場合は、.getAttribute('data-を含めた属性名')で取得する</li>
+			</ul>
+			<input type="button" id="button-sample1" value="サンプル1実行" />
+			<p id="dataset-result"></p>
+			<h3>カスタムデータ属性の設定</h3>
+			<ul>
+				<li>エレメント.dataset.data-以降の名称 = ほげほげ で設定できる</li>
+				<li>対応していないブラウザ場合は、.setAttribute('data-を含めた属性名') = ほげほげ で設定する</li>
+			</ul>
+
+			<input type="button" id="button-sample2" value="サンプル2実行" />
+		</article>
+	</section>
+
+	<script src="sample01.js"></script>
+</body>
+</html>

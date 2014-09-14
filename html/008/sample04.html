@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="sample04.css">
+	<title>Web Storage イベント　/008/sample04</title>
+</head>
+<body>
+	<div id="droparea">ここに画像をドロップしてください。</div>
+	<div id="imagearea"></div>
+
+	<form id="form1">
+		<ul>
+			<li>
+				<label for="user_name">名前</label>
+				<input type="text" name="user_name" id="user_name" value="" required autofocus/>
+			</li>
+			<li>
+				<label for="user_email">メールアドレス</label>
+				<input type="email" name="user_email" id="user_email" value="" />
+			</li>
+			<li>
+				<label for="user_url">URL</label>
+				<input type="url" name="user_url" id="user_url" value="" />
+			</li>
+			<li>
+				<label for="user_affiliation">所属</label>
+				<select name="user_affiliation" id="user_affiliation">
+					<option value="" selected></option>
+					<option value="1">OITEC</option>
+					<option value="2">GDD中国</option>
+					<option value="3">okayama-js</option>
+				</select>
+			</li>
+		</ul>
+		<input type="submit" id="button_save" value="登録" />
+	</form>
+
+	<script src="sample04.js"></script>
+</body>
+</html>

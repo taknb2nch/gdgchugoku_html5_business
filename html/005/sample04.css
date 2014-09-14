@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+#drop_zone {
+	width: 600px;
+	height: 100px;
+	background-color: #eeeeee;
+	border: dotted 1px #888888;
+	text-align: center;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+.message {
+	width: 400px;
+	height: 300px;
+	background-color: #ffffff;
+	border: dotted 1px #888888;
+	padding: 10px;
+	margin: 10px 0px;
+	overflow: scroll;
+	float: left;
+}
+
+.preview {
+	width: 500px;
+	height: 300px;
+	background-color: #ffffff;
+	border: dotted 1px #888888;
+	padding: 10px;
+	margin: 10px 20px;
+	overflow: scroll;
+	float: left;
+}
+
+.thumbnail {
+	width: 480px;
+	margin: 5px;
+}
+
+.tree {
+	list-style: none;
+	margin-left: 0px;
+	-webkit-padding-start: 20px;
+}
+
+.tree li {
+	text-indent: 1.2em;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.tree-item-file {
+	background-image: url('file.gif');
+}
+
+.tree-item-folder-open {
+	background-image: url('folder-open.gif');
+}
+
+.tree-item-folder-close {
+	background-image: url('folder-close.gif');
+}

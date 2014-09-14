@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+#drop_zone {
+	width: 600px;
+	height: 100px;
+	background-color: #eeeeee;
+	border: dotted 1px #888888;
+	text-align: center;
+	padding: 10px;
+	margin: 10px 0px;
+}
+
+.message {
+	width: 600px;
+	height: 300px;
+	background-color: #ffffff;
+	border: dotted 1px #888888;
+	padding: 10px;
+	margin: 10px 0px;
+	overflow: scroll;
+}
+
+.output {
+	width: 600px;
+	height: 300px;
+	background-color: #eeeeee;
+	border: dotted 1px #888888;
+	padding: 10px;
+	margin: 10px 0px;
+	overflow: scroll;
+}
+
+.thumbnail {
+	width: 80px;
+	margin: 5px;
+}

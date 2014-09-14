@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.box {
+	padding: 5px;
+}
+
+.log {
+	width: 800px;
+	overflow: hidden;
+}
+
+.log_message {
+	padding: 7px 2px;
+	margin: 1px;
+}
+
+.log_message_odd {
+	background-color: #ccffff;
+}
+
+.log_message_even {
+	background-color: #ffffff;
+}
+
+.log ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.log ul li {
+	list-style:none;
+	padding: 0px;
+	margin: 0px;
+	border-top: 1px dotted #ccc;
+}
+
+#drop_zone {
+	border: 1px dashed #888888;
+	text-align: center;
+	color: #888888;
+	width: 480px;
+	height: 50px;
+	padding: 10px;
+	margin: 5px;
+}
+
+.thumbnail {
+	max-width: 100px;
+	border: 0px;
+}
+
+.keyword-changed {
+	font-size: 1.5em;
+	font-weight: bold;
+}

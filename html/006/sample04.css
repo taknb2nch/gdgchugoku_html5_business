@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+#drop_zone {
+	width: 200px;
+	height: 200px;
+	background-color: #eeeeee;
+	border: dotted 1px #888888;
+	text-align: center;
+	padding: 10px;
+	margin: 10px 0px;
+}

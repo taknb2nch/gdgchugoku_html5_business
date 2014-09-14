@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>/011/sample05</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="sample05.css">
+<style>
+.box {
+	margin: 2px;
+	padding: 1px;
+}
+</style>
+</head>
+<body>
+	<div class="box">
+		<label for="stroke_style">線の色</label>
+		<select id="stroke_style">
+			<option value="255, 0, 0">255, 0, 0</option>
+			<option value="255, 255, 0">255, 255, 0</option>
+			<option value="255, 0, 255">255, 0, 255</option>
+			<option value="0, 255, 0">0, 255, 0</option>
+			<option value="0, 0, 255">0, 0, 255</option>
+			<option value="0, 255, 255">0, 255, 255</option>
+		</select>
+		<label for="line_width">線の太さ</label>
+		<input id="line_width" type="range" min="1" max="10" step="1" value="1" />
+	</div>
+	<div class="box" style="position: relative">
+		<canvas id="myCanvas" width="800" height="600">
+			HTML5　Canvasに対応したブラウザーを使用してください。
+		</canvas>
+	</div>
+	<script src="sample05.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.box {
+	padding: 10px;
+}
+
+.log {
+	width: 600px;
+	height: 300px;
+	overflow: scroll;
+	border: 1px solid #888888;
+}
+
+.log ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.log ul li {
+	list-style:none;
+	padding: 7px 2px;
+	border-top: 1px dotted #ccc;
+}
+
+#drop_zone {
+	border: 2px dashed #888888;
+	text-align: center;
+	color: #888888;
+	width: 600px;
+	height: 100px;
+}
+
+.thumbnail {
+	max-width: 100px;
+	border: 0px;
+}
+
+.iframe {
+	width: 650px;
+	height: 400px;
+}
+
+.iframe_small {
+	width: 650px;
+	height: 100px;
+}

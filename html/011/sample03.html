@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>サンプル3-文字列と画像の複数人での送信 /011/sample03</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="sample.css">
+</head>
+<body>
+	<div class="box">
+		<button id="button_connect">接続</button>
+		<button id="button_close">切断</button>
+	</div>
+	<div class="box">
+		<div id="textarea" style="width: 500px;">
+			<div>
+				<textarea id="text_message" style="width:100%;min-height:48px;margin:5px;"></textarea>
+			</div>
+			<div>
+				<input type="button" id="button_send" value="送信" />
+			</div>
+		</div>
+		<div id="drop_zone">ここにドラッグしてください。</div>
+	</div>
+	<div class="box log" id="output"><ul></ul></div>
+	<script src="sample03.js"></script>
+</body>
+</html>

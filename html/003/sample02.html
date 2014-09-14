@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="sample02.css">
+	<title>ドラッグ&amp;ドロップサンプル /003/sampel02</title>
+</head>
+<body>
+	<section>
+		<h1>DnDサポート検出サンプル</h1>
+		
+		<div style="clear:both">
+			<input type="button" value="DnDサポート検出" id="button-dnd-detect" />
+		</div>
+
+		<h1>ドラッグ可、不可</h1>
+		
+		<div style="clear:both">
+			<div draggable="true" class="column"><header>draggable</header></div>
+			<div draggable="false" class="column"><header>not draggable</header></div>
+		</div>
+		
+		<h1>ドラッグ可能エレメントサンプル</h1>
+		
+		<div class="clear">
+			<div draggable="true" class="column"><header>A</header></div>
+			<img src="https://sites.google.com/site/gdgchugokuofficial/_/rsrc/1344459194790/home/GDG_Chugoku_site_org.png?width=300" />
+			<a href="https://sites.google.com/site/gdgchugokuofficial/">GDGChugoku</a>
+		</div>
+		
+		<h1>ドラッグ&amp;ドロップサンプル1</h1>
+		
+		<div class="clear" id="drag-columns1">
+			<div draggable="true" class="column"><header>A</header></div>
+			<div draggable="true" class="column"><header>B</header></div>
+			<div draggable="true" class="column"><header>C</header></div>
+			<div draggable="true" class="column"><header>D</header></div>
+		</div>
+		
+		<h1>ドラッグ&amp;ドロップサンプル2</h1>
+		
+		<div class="clear" id="drag-columns2">
+			<div id="drag-area" class="dnd-area">
+				<div draggable="true" class="column" id="element1"><header>A</header></div>
+				<img src="https://sites.google.com/site/gdgchugokuofficial/_/rsrc/1344459194790/home/GDG_Chugoku_site_org.png?width=300"  id="element2" />
+				<a href="https://sites.google.com/site/gdgchugokuofficial/" id="element3">GDGChugoku</a>
+			</div>
+			<div id="drop-area1" class="dnd-area"></div>
+		</div>
+		
+		<h1>ドラッグ&amp;ドロップサンプル3</h1>
+		
+		<div class="clear" id="drag-columns2">
+			<div id="drop-area2" class="dnd-area">ここにファイルをドロップします。</div>
+		</div>
+	</section>
+
+	<script src="sample02.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div>
+		<input type="button" id="button_start" value="start" />
+		<input type="button" id="button_stop" value="stop" />
+	</div>
+	<div id="output"></div>
+<script>
+(function() {
+
+var source
+  , button_start = document.querySelector('#button_start')
+  , button_stop = document.querySelector('#button_stop');
+
+
+var isClosing = false;
+
+button_start.addEventListener('click', function(e) {
+	
+	if (source) {
+		source.close();
+		source = null;
+	}
+
+	source = new EventSource('/events');
+
+	source.onmessage = function(e) {
+		document.querySelector('#output').innerHTML += e.data + '<br>';
+
+		// if (isClosing) {
+		// 	e.target.close();
+		// 	isClosing = false;
+		// }
+	};
+
+}, false);
+
+button_stop.addEventListener('click', function(e) {
+	//isClosing = true;
+	if (source) {
+		source.close();
+		source = null;
+	}
+}, false);
+
+}());
+</script>
+</body>
+</html>
